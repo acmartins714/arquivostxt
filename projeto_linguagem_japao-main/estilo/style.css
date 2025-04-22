@@ -1,0 +1,174 @@
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+ul {
+    display: flex;
+    justify-content: flex-end;
+    margin: 0;
+    padding: 2cap;
+    box-sizing: border-box;
+    list-style-type: none;  
+}
+
+img {
+    width: 100%;
+}
+
+nav {
+    background-color: #aa706d;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+    padding: 8px;
+    font-size: 15px;
+}
+
+h1 {
+    text-align: center;
+    padding: 20px 0;
+}
+
+p {
+    text-align: justify;
+    padding: 0 15%;
+    font-size: 20px; 
+}
+
+.origem {
+    background-color: white;
+    color: rgb(78, 78, 73);
+}
+
+footer {
+    text-align: center;
+    padding: 20px 0;
+    background-color: #aa706d;
+    color: white;
+    font-size: 15px;
+    margin-top: 20px;
+}
+
+.escritas {
+    color: rgb(78, 78, 73);
+}
+
+hr {
+    border: 0.5px solid #aa706d; 
+    margin: 15px 10%;
+}
+
+.linguagem-container {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-around; 
+    gap: 20px; 
+    padding: 50px 10%;
+}
+
+.linguagem {
+    text-align: center;
+    background-color: #f8f8f8;
+    padding-top: 30px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    width: 400px;
+}
+
+.linguagem img {
+    max-width: 100%;
+    height: 300px;
+    border-radius: 5px;
+}
+
+.hiragana, .katakana, .kanji {
+    border-top: #aa706d 8px solid;
+}
+
+.katakana {
+    padding-bottom: 50px;
+}
+
+@media (max-width: 768px) {
+    p {
+        padding: 0 10%;
+        font-size: 18px;
+    }
+
+    .linguagem-container {
+        flex-wrap: wrap;
+        padding: 20px;
+    }
+
+    .linguagem {
+        width: 100%;
+    }
+
+    hr {
+        margin: 10px 5%;
+    }
+}
+
+@media (max-width: 480px) {
+    p {
+        padding: 0 20px;
+        font-size: 16px;
+    }
+
+    .linguagem img {
+        height: auto;
+    }
+
+    hr {
+        margin: 10px 20px;
+    }
+}
+
+.foto-redonda {
+    width: 290px;
+    height: 290px;
+    border-radius: 50%;
+    object-fit: cover;
+    float: right;
+    margin: 20px;
+}
+
+.topicos1 {
+    color: rgb(78, 78, 73);
+    margin-top: 20px;
+    flex: 1 1 300px;
+    padding-right: 100px;
+}
+
+.topicos1 h2 {
+    font-size: 2.25em;
+    color: #a4a4a4;
+    margin-bottom: 20px;
+}
+
+.topicos1 h2::before {
+    content: '';
+    display: inline-block;
+    width: 8px;
+    height: 30px;
+    margin-right: 20px;
+}
+
+.topicos1:nth-of-type(3n+1) h2::before,
+.topicos1:nth-of-type(3n+2) h2::before,
+.topicos1:nth-of-type(3n+3) h2::before {
+    background: #aa706d;
+    margin-left: 200px;
+}
+
+footer {
+    margin-top: 75px;
+}
